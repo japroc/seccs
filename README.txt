@@ -13,7 +13,7 @@ Binary:
   ASLR:
   | Bypass:
   | | Memory leak
-  | | Relative addressing + Partial IP overwrite
+  | | Relative addressing + Partial IP overwrite/Off-by-one overflow
   | | Weak randomization algorithm (BAD)
   | | Side channels
   | | Modules w/o ASLR:
