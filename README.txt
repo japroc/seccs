@@ -5,7 +5,9 @@ Binary:
   | | Off-by-one
   | Protection:
   | | StackGuard/StackCookie/canary
-  | | NX/DEP
+  | | NX/DEP:
+  | |   Bypass:
+  | |     ROP
   | | Shadow Stack
   |   
   ASLR:
