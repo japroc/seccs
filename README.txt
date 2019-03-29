@@ -25,5 +25,5 @@ Binary:
     | Turned off DEP tuns of CFG protection
     | Find CTF table and change/use
     | Modules withoud CFG
-    | Unalighned functions
+    | Unaligned functions
     | JIT-functions   
