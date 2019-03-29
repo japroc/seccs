@@ -7,13 +7,21 @@ Binary:
       StackGuard/StackCookie/canary
       NX/DEP
       Shadow Stack
-ASLR
-  Bypass:
-    Memory leak
-    Relative addressing + Partial IP overwrite
-    Weak randomization algorithm (BAD)
-    Side channels
-    Modules w/o ASLR:
-      HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\MoveImages:
-         0 -> respect PE header's IMAGE_DLL_CHARACTERISTICS_DYNAMIC_BASE value
-        -1 -> ignores PE header's IMAGE_DLL_CHARACTERISTICS_DYNAMIC_BASE value and force randomize 
+  ASLR:
+    Bypass:
+      Memory leak
+      Relative addressing + Partial IP overwrite
+      Weak randomization algorithm (BAD)
+      Side channels
+      Modules w/o ASLR:
+        HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\MoveImages:
+           0 -> respect PE header's IMAGE_DLL_CHARACTERISTICS_DYNAMIC_BASE value
+          -1 -> ignores PE header's IMAGE_DLL_CHARACTERISTICS_DYNAMIC_BASE value and force randomize 
+  CFG:
+    Bypass (https://habr.com/ru/company/dsec/blog/305960/):
+      Turned off DEP tuns of CFG protection
+      Find CTF table and change/use
+      Modules withoud CFG
+      Unlighned functions
+      JIT-functions
+      
