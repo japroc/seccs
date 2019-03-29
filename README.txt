@@ -7,6 +7,7 @@ Binary:
       StackGuard/StackCookie/canary
       NX/DEP
       Shadow Stack
+      
   ASLR:
     Bypass:
       Memory leak
